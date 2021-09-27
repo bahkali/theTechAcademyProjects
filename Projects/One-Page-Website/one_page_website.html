@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <title>The ONE-PAGE</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The ONE-PAGE</title>
+    <link rel="stylesheet" href="./css/one_page_website.css" />
+  </head>
+
   <body>
     <!-- Nav -->
-    <div>
-      <nav>
-        <ul>
+    <div class="wrap">
+      <nav class="menu-container">
+        <ul class="menu">
           <a href="#home" id="link"><li>HOME</li></a>
           <a href="#gallery"><li>GALLERY</li></a>
-          <a href="#contact"><li>CONTACT</li></a>
           <a href="#video"><li>VIDEO</li></a>
+          <a href="#contact"><li>CONTACT</li></a>
         </ul>
       </nav>
     </div>
@@ -19,31 +23,101 @@
     <section id="home">
       <div class="container">
         <div class="text-center">
-          <h1 class="head-main">The ONE-PAGE WEBSITE</h1>
+          <h1 class="head-main">The Master Drawer</h1>
         </div>
       </div>
     </section>
     <!-- End HOME -->
 
     <!-- Gallery -->
-    <section>
-      <div id="gallery">
+    <section id="gallery">
+      <div class="container">
         <h1>Gallery</h1>
+        <div class="flex-container">
+          <!-- PHOTO-CONTAINER 1-->
+          <div class="photo-container">
+            <div class="photo">
+              <img src="./drawingcontour.jpg" alt="" />
+            </div>
+          </div>
+          <!-- END PHOTO-CONTAINER 1-->
+        </div>
       </div>
     </section>
     <!-- End Gallery -->
+    <!-- VIDEO -->
+    <section id="video">
+      <div class="container">
+        <h1>Video</h1>
+        <div class="flex-container">
+          <!-- VIDEO-CONTAINER 1-->
+          <div class="video-container">
+            <iframe
+              width="730"
+              height="411"
+              src="https://www.youtube.com/embed/zqE-ultsWt0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--END VIDEO-CONTAINER 1-->
+          <!-- VIDEO-CONTAINER 2-->
+          <div class="video-container">
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/4Za-7SMS500"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--END VIDEO-CONTAINER 2-->
+          <!-- VIDEO-CONTAINER 2-->
+          <div class="video-container">
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/4Za-7SMS500"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--END VIDEO-CONTAINER 2-->
+          <!-- VIDEO-CONTAINER 2-->
+          <div class="video-container">
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/4Za-7SMS500"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--END VIDEO-CONTAINER 2-->
+        </div>
+      </div>
+    </section>
+    <!-- End VIDEO -->
     <!-- RSVP -->
-    <section>
-      <div id="contact">
-        <h1>Contact Us</h1>
+    <section id="contact">
+      <div class="container">
+        <h1 class="heading-padding">Contact Us</h1>
         <div>
           <h2></h2>
-          <p>Please provide us with your basic contact information.</p>
-          <div>
+          <p>Want to improve your drawing.</p>
+          <div class="form-rsvp">
             <form action="" method="post">
-              <input type="text" name="First_Name" value="First_Name" /><br />
-              <br />
-              <input type="text" name="Last_Name" value="Last_Name" />
+              <input type="text" name="First_Name" placeholder="First_Name" />
+              <input type="text" name="Last_Name" placeholder="Last_Name" />
+              <input type="text" name="Email" placeholder="Email Address" />
               <div class="form-spacer">
                 <label class="terms">Terms and Conditions</label>
               </div>
@@ -56,22 +130,7 @@
       </div>
     </section>
     <!-- RSVP -->
-    <!-- VIDEO -->
-    <section>
-      <div id="video">
-        <h1>Video</h1>
-        <iframe
-          width="730"
-          height="411"
-          src="https://www.youtube.com/embed/zqE-ultsWt0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-    <!-- End VIDEO -->
+
     <!-- FOOTER -->
     <div>www.theOnePage.net &nbsp;|&nbsp; &copy; 2021</div>
     <!-- END FOOTER -->
