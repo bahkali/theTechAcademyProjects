@@ -42,7 +42,7 @@ h1 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  color: #e91c1c;
+  color: #1c75e9;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 h1::after {
@@ -50,7 +50,7 @@ h1::after {
   content: "";
   height: 2px;
   width: 150px;
-  background-color: #e91c1c;
+  background-color: #1c75e9;
   margin: 5px auto 40px;
   box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
@@ -67,7 +67,6 @@ p {
 }
 section {
   padding-top: 50px;
-  margin-top: 13%;
 }
 .clearfix::after,
 .container::after,
@@ -86,10 +85,40 @@ section {
   text-align: center;
 }
 /*==================================
+         HOME SECTION STYLES
+====================================*/
+#home {
+  background: url(../background.jpg) no-repeat 50% 50%;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  display: block;
+  height: auto;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  color: #fff;
+}
+.head-main {
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+  font-variant: small-caps;
+  color: #fff;
+  letter-spacing: 5pt;
+  word-spacing: 21pt;
+  font-size: 4.5em;
+  text-align: center;
+  font-family: impact, sans-serif;
+  line-height: 2;
+  font-weight: 900;
+}
+
+/*==================================
  MENU SECTION STYLES
 ====================================*/
 .menu {
-  color: #f00;
+  color: rgb(0, 119, 255);
   font: bold 12px/18px sans-serif;
   text-align: center;
   display: inline;
@@ -116,17 +145,20 @@ section {
   transition-timing-function: ease-in-out;
 }
 .menu li:hover {
-  color: #f00;
+  color: rgb(0, 60, 255);
   background-color: rgba(100, 65, 0, 0.3);
 }
+/*==================================
+ GALLERY SECTION STYLES
+====================================*/
 .flex-container {
   display: block;
   display: -webkit-flex;
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 0px;
-  background-color: rgba(4, 48, 90, 0.514);
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(73, 107, 139, 0.37);
+  box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.5);
 }
 
 .photo-container,
@@ -142,4 +174,79 @@ section {
   max-width: 100%;
   width: 300px;
   height: 169px;
+}
+/*==================================
+ CONTACT SECTION STYLES
+====================================*/
+#contact {
+  background-color: #f5f3f3;
+}
+.reservation {
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0px auto;
+  background-color: rgba(25, 9, 54, 0.349);
+  border-radius: -1px -1px 1px 0 rgba(0, 0, 0, 0.1) 0 rgba(0, 0, 0, 0.5);
+}
+.reservation h2 {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  color: #13161b;
+  font-size: 1.3em;
+  letter-spacing: 0pt;
+  word-spacing: 0pt;
+}
+
+.reservation h2 span {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  color: #13161b;
+  font-weight: 900;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  letter-spacing: 0.4pt;
+  word-spacing: 0.3pt;
+}
+.reservation p {
+  color: #13161b;
+  width: 50%;
+  margin: 0 auto;
+}
+.reservation form {
+  font-size: 15px;
+  outline: none;
+  font-weight: 600;
+  color: #8dee8f;
+  padding: 12px 12px;
+  width: 70%;
+  border-radius: 1px solid #808080;
+  margin: 2% auto;
+  border-radius: 7px;
+  background: rgb(227, 222, 222);
+  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  font-family: "Raleway", sans-serif;
+}
+.reservation input[type="text"] {
+  font-size: 15px;
+  outline: none;
+  font-weight: 600;
+  color: #8dee8f;
+  padding: 2% 1% 2% 7%;
+  width: 80%;
+  border-top: 1px solid #090b0d;
+  border-right: 2px solid #424542;
+  border-bottom: 2px solid #424549;
+  border-left: 1px solid #424549;
+  margin: 10px 1em;
+  border-radius: 7px;
+  background: #6f92ceca;
+  box-shadow: inset 0px 3px 0px 0px rgba(46, 45, 45, 0.15);
+  font-family: "Raleway", sans-serif;
+}
+.reservation input[type="text"]:hover {
+  box-shadow: 0 0 18px rgba(0, 47, 100, 0.8);
 }
