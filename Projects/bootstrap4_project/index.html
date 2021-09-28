@@ -20,16 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="#"
+              <a class="nav-link text-light" href="#about"
                 >About <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Showtimes</a>
+              <a class="nav-link text-light" href="#showtimes">Showtimes</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Deals</a>
+              <a class="nav-link text-light" href="#deals">Deals</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -58,7 +58,7 @@
       </div>
       <!-- End Jumbotron -->
       <!-- Movie  -->
-      <div class="container">
+      <div id="about" class="container">
         <div class="row">
           <div class="col-sm">
             <img class="img-fluid" src="./img/pdx.jpg" alt="" />
@@ -96,22 +96,134 @@
         </div>
       </div>
       <!-- End Movie -->
-      <!-- Form -->
-      <div class="text-center">
-        <form>
-          <h1 class="text-primary my-5">Sign up for Movie Club Rewards</h1>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-            />
+      <!-- ShowLine -->
+      <div id="showtimes" class="container my-5">
+        <h3>Showtimes:</h3>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                alt="Kong"
+                style="height: 250px; width: 100%; display: block"
+                src="./img/kongskullisland.jpg"
+                data-holder-rendered="true"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Kong Skull Island</h4>
+                <p class="card-text">
+                  A team of scientists explore an uncharted island in the
+                  Pacific, venturing into the domain of the mighty kong, and
+                  must fight to escape a primal Eden.
+                </p>
+                <br />
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="">
+                    <span class="badge badge-pill badge-info">1:00pm</span>
+                    <span class="badge badge-pill badge-info">3:00pm</span>
+                    <span class="badge badge-pill badge-info">5:30pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last update 3 mins ago</small>
+              </div>
+            </div>
           </div>
+          <!-- End Card ! -->
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                alt="Kong"
+                style="height: 245px; width: 100%; display: block"
+                src="./img/ghostintheshell.jpg"
+                data-holder-rendered="true"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Ghost in the Shell</h4>
+                <p class="card-text">
+                  In the near future, Major Mila Killian is the first of her
+                  kind: A human saved from a terrible crash, who is
+                  cyber-enhanced to be a perfect soldier devoted to stopping the
+                  world's most dangerous criminals.'
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="">
+                    <span class="badge badge-pill badge-info">1:00pm</span>
+                    <span class="badge badge-pill badge-info">3:00pm</span>
+                    <span class="badge badge-pill badge-info">5:30pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last update 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- End Card ! -->
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                class="card-img-top"
+                alt="Kong"
+                style="height: 245px; width: 100%; display: block"
+                src="./img/beautyandthebeast.jpg"
+                data-holder-rendered="true"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Beauty and the Beast</h4>
+                <p class="card-text">
+                  A selfish prince is cursed to become a monster for the rest of
+                  his life, unless he learns to fall in love with a beautiful
+                  young woman, he keeps prisoner.
+                </p>
+                <br />
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="">
+                    <span class="badge badge-pill badge-info">1:00pm</span>
+                    <span class="badge badge-pill badge-info">3:00pm</span>
+                    <span class="badge badge-pill badge-info">5:30pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last update 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- End Card ! -->
+        </div>
+      </div>
+      <!-- End ShowLine -->
+      <!-- Form -->
+      <div id="deals" class="text-center container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form>
+              <h1 class="text-primary my-5">SIGN UP FOR MOVIE CLUB REWARDS!</h1>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="you@example.com"
+                />
+              </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+              <button type="submit" class="btn btn-outline-primary">
+                Sign up!
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
       <!-- End Form -->
       <div class="container my-5">
