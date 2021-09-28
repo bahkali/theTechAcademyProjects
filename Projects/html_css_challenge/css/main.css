@@ -1,0 +1,22 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.center-img {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+}
+footer {
+  text-align: center;
+  font-weight: 900;
+}
+/* Table Styles */
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
