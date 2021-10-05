@@ -2,6 +2,20 @@
 
 This is my html and css portfolio repo.
 
+## Projects
+
+- [Space Station Site](./Projects/../../Projects/space_station/index.html)
+- [Movie Theater Site](./Projects/../../Projects/bootstrap4_project/index.html)
+
+## Space Station Site
+
+This page is an example home page for a space travel company. It's styled using CSS and contains a navbar, image containers, and a form.
+
+## Movie Theater Site
+
+This page is an example home page for a Movie theater that is styled using Boostrap 4. It contains many Bootstrap components including
+but not limited to a navbar. jumbotron, form, cards, and dropdowns
+
 ## Technologies and Libraries
 
 <p align='left'>
