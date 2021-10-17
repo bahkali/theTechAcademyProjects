@@ -16,3 +16,9 @@ function division_function() {
   let division = 48 / 6;
   document.getElementById("mathD").innerHTML = "48 / 6= " + division;
 }
+
+function modulus_function() {
+  let modulus = 25 % 6;
+  document.getElementById("mathU").innerHTML =
+    "When you divide 25 by 6 you have a remainder of: " + modulus;
+}
