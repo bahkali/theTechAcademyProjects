@@ -8,17 +8,28 @@
   </head>
   <body>
     <h1>Javascript Math Operators</h1>
+    <div>
+      This number is randomly generated everytime you reload the page
+      <span id="random"></span>
+    </div>
+    <p id="countN"></p>
     <p id="mathP"></p>
     <p id="mathS"></p>
     <p id="mathM"></p>
     <p id="mathD"></p>
     <p id="mathU"></p>
+    <button onclick="increment_function()">Incremment</button>
+    <button onclick="decrement_function()">Decrement</button>
     <button onclick="add_function()">Display ADD</button><br />
     <button onclick="subtract_function()">Display Subtraction</button><br />
     <button onclick="multiplication_function()">Display Multiplication</button
     ><br />
     <button onclick="division_function()">Display Division</button><br />
     <button onclick="modulus_function()">Display Modulus</button><br />
+
     <script src="./js/main.js"></script>
+    <script>
+      document.getElementById("random").innerHTML = Math.random() * 100;
+    </script>
   </body>
 </html>

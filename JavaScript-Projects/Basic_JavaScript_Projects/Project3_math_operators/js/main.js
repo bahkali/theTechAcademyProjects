@@ -22,3 +22,13 @@ function modulus_function() {
   document.getElementById("mathU").innerHTML =
     "When you divide 25 by 6 you have a remainder of: " + modulus;
 }
+function increment_function() {
+  var x = 5;
+  x++;
+  document.getElementById("countN").innerHTML = x;
+}
+function decrement_function() {
+  var x = 5;
+  x--;
+  document.getElementById("countN").innerHTML = x;
+}
