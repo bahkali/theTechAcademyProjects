@@ -30,7 +30,7 @@ document.writeln("hello" === "World");
 // Boolean Operator
 document.writeln(5 > 2 && 10 > 4);
 document.writeln(14 > 7 || 54 > 74);
-
+// Using Not Operator sign
 function not_function() {
   document.getElementById("Not").innerHTML = !(20 > 10);
 }
