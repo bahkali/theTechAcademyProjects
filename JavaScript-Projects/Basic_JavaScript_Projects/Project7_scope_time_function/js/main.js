@@ -26,3 +26,13 @@ function get_date() {
     document.getElementById("Greeting").innerHTML = "How are you today?";
   }
 }
+//  Else Statement
+function Age_function() {
+  var Age = document.getElementById("Age").value;
+  if (Age >= 18) {
+    Vote = "You are old enough to vote!";
+  } else {
+    Vote = "You are not old enough to vote!";
+  }
+  document.getElementById("how_old_are_you").innerHTML = Vote;
+}
