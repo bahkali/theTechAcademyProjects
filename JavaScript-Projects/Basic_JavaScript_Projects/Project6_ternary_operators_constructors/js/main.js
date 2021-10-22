@@ -33,3 +33,16 @@ function my_function() {
     " manufactured in " +
     Erik.Vehicle_Year;
 }
+
+// Nested function
+function count_function() {
+  document.getElementById("Counting").innerHTML = Count();
+  function Count() {
+    var Starting_point = 9;
+    function Plus_one() {
+      Starting_point += 1;
+    }
+    Plus_one();
+    return Starting_point;
+  }
+}
