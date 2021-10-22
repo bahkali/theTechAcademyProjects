@@ -19,3 +19,10 @@ function add_num_4() {
 }
 add_num_3();
 add_num_4();
+
+// IF Statement
+function get_date() {
+  if (new Date().getHours() < 18) {
+    document.getElementById("Greeting").innerHTML = "How are you today?";
+  }
+}
