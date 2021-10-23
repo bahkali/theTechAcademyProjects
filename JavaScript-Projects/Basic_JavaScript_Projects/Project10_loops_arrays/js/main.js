@@ -32,3 +32,49 @@ function array_function() {
   document.getElementById("Cat").innerHTML =
     "In this picture, the cat is " + cat_picture[2] + ".";
 }
+
+// Using Const Keyword in this function
+// NO the change variable.
+function constant_function() {
+  const musical_instrument = {
+    type: "guitar",
+    brand: "Fender",
+    color: "black",
+  };
+  musical_instrument.color = "blue";
+  musical_instrument.price = "$900";
+  document.getElementById("constant").innerHTML =
+    "The cost of the " +
+    musical_instrument.type +
+    " was " +
+    musical_instrument.price;
+}
+// Dislplay Let Keyword value
+var x = "Hello this is var keyword";
+document.writeln("<br>" + x);
+{
+  let x = "Hello this is let keyword.";
+  document.writeln("<br>" + x);
+}
+document.writeln("<br>" + x + "<br><br>");
+
+// Using Object
+let car = {
+  make: "Nissan",
+  model: "Sonatra",
+  year: "2014",
+  color: "grey",
+  description: function () {
+    return (
+      "The car is a " +
+      this.year +
+      " " +
+      this.color +
+      " " +
+      this.make +
+      " " +
+      this.model
+    );
+  },
+};
+document.getElementById("car_object").innerHTML = car.description();
