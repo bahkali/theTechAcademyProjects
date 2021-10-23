@@ -25,3 +25,10 @@ function for_loop() {
   }
   document.getElementById("List_of_foods").innerHTML = result;
 }
+
+// Display Array Function
+function array_function() {
+  var cat_picture = ["sleeping", "playing", "eating", "purring"];
+  document.getElementById("Cat").innerHTML =
+    "In this picture, the cat is " + cat_picture[2] + ".";
+}
