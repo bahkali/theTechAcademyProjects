@@ -20,7 +20,7 @@ function placeXOro(squareNumber) {
       activePlayer = "X";
     }
 
-    Audio("../media/place.mp3");
+    audio("media/place.mp3");
     if (activePlayer === "O") {
       disableClick();
       setTimeout(function () {
@@ -78,7 +78,7 @@ function checkWinConditions() {
   } else if (arrayIncludes("00", "40", "80")) {
     drawWinLine(100, 100, 520, 520);
   } else if (selectedSquares.length >= 9) {
-    Audio("../media/tie.mp3");
+    audio("media/tie.mp3");
     setTimeout(function () {
       resetGame();
     }, 1000);
@@ -94,4 +94,17 @@ function arrayIncludes(squareA, squareB, squareC) {
   if (a === true && b === true && c === true) {
     return true;
   }
+}
+// Function toi makes body element temporarily unclickable
+function disableClick() {
+  body.style.pointerEvents = "none";
+  setTimeout(function () {
+    body.style.pointerEvents = "auto";
+  }, 1000);
+}
+
+// function for placing sound
+function audio(audioURL) {
+  let audio = new Audio(audioURL);
+  audio.play();
 }
