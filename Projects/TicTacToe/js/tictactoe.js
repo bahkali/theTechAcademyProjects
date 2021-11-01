@@ -152,6 +152,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     }
   }
 
+  //   Function will clear the line after winning
   function clear() {
     const animationLoop = requestAnimationFrame(clear);
     c.clearRect(0, 0, 608, 608);
