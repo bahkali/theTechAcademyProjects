@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>The ONE-PAGE</title>
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/one_page_website.css" />
     <script src="./js/one_page_website.js" defer></script>
   </head>
@@ -39,56 +40,96 @@
           <!-- PHOTO-CONTAINER 1-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/dropbox-logo.jpg" alt="" />
+              <img
+                src="./img/dropbox-logo.jpg"
+                onclick="openModal();currentSlide(1)"
+                class="hover-shadow"
+                alt=""
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 1-->
           <!-- PHOTO-CONTAINER 2-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/justhost-logo.jpg" alt="" />
+              <img
+                src="./img/justhost-logo.jpg"
+                alt=""
+                onclick="openModal();currentSlide(2)"
+                class="hover-shadow"
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 2-->
           <!-- PHOTO-CONTAINER 3-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/stuff-bg.jpg" alt="" />
+              <img
+                src="./img/stuff-bg.jpg"
+                alt=""
+                onclick="openModal();currentSlide(3)"
+                class="hover-shadow"
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 3-->
           <!-- PHOTO-CONTAINER 4-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/ghostintheshell.jpg" alt="" />
+              <img
+                src="./img/ghostintheshell.jpg"
+                alt=""
+                onclick="openModal();currentSlide(4)"
+                class="hover-shadow"
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 4-->
           <!-- PHOTO-CONTAINER 5-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/kongskullisland.jpg" alt="" />
+              <img
+                src="./img/kongskullisland.jpg"
+                onclick="openModal();currentSlide(5)"
+                class="hover-shadow"
+                alt=""
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 5-->
           <!-- PHOTO-CONTAINER 6-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/beautyandthebeast.jpg" alt="" />
+              <img
+                src="./img/beautyandthebeast.jpg"
+                onclick="openModal();currentSlide(6)"
+                class="hover-shadow"
+                alt=""
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 6-->
           <!-- PHOTO-CONTAINER 7-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./drawingcontour.jpg" alt="" />
+              <img
+                src="./drawingcontour.jpg"
+                onclick="openModal();currentSlide(7)"
+                class="hover-shadow"
+                alt=""
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 7-->
           <!-- PHOTO-CONTAINER 8-->
           <div class="photo-container">
             <div class="photo">
-              <img src="./img/pdx.jpg" alt="" />
+              <img
+                src="./img/pdx.jpg"
+                onclick="openModal();currentSlide(8)"
+                class="hover-shadow"
+                alt=""
+              />
             </div>
           </div>
           <!-- END PHOTO-CONTAINER 8-->
@@ -96,6 +137,107 @@
       </div>
     </section>
     <!-- End Gallery -->
+    <!-- Modal/LightBox -->
+    <div class="row">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1/8</div>
+            <img style="width: 100%" src="./img/dropbox-logo.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2/8</div>
+            <img style="width: 100%" src="./img/justhost-logo.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3/8</div>
+            <img style="width: 100%" src="./img/stuff-bg.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4/8</div>
+            <img style="width: 100%" src="./img/ghostintheshell.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5/8</div>
+            <img style="width: 100%" src="./img/kongskullisland.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6/8</div>
+            <img style="width: 100%" src="./img/beautyandthebeast.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7/8</div>
+            <img style="width: 100%" src="./drawingcontour.jpg" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8/8</div>
+            <img style="width: 100%" src="./img/pdx.jpg" />
+          </div>
+          <!-- next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img
+              src="./img/dropbox-logo.jpg"
+              onclick="currentSlide(1)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/justhost-logo.jpg"
+              onclick="currentSlide(2)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/stuff-bg.jpg"
+              onclick="currentSlide(3)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/ghostintheshell.jpg"
+              onclick="currentSlide(4)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/kongskullisland.jpg"
+              onclick="currentSlide(5)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/beautyandthebeast.jpg"
+              onclick="currentSlide(6)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./drawingcontour.jpg"
+              onclick="currentSlide(7)"
+              class="demo thumbnail"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./img/pdx.jpg"
+              onclick="currentSlide(8)"
+              class="demo thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal/LightBox -->
     <!-- VIDEO -->
     <section id="video">
       <div class="container">
