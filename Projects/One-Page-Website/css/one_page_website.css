@@ -20,9 +20,11 @@ body {
   font-size: 14px;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background: url(../img/tile.jpg) top left repeat;
 }
 footer,
 nav {
@@ -65,9 +67,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-section {
-  padding-top: 50px;
-}
+
 .clearfix::after,
 .container::after,
 .navbar::after {
@@ -88,8 +88,7 @@ section {
          HOME SECTION STYLES
 ====================================*/
 #home {
-  background: url(../background.jpg) no-repeat 50% 50%;
-  background-attachment: fixed;
+  background: url(../background2.jpg) repeat 50% 0 fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -157,36 +156,59 @@ section {
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 0px;
-  background-color: rgba(73, 107, 139, 0.37);
+  /* background-color: rgba(73, 107, 139, 0.37); */
+  background: #3e4249;
+  color: white;
   box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.5);
 }
 
-.photo-container,
-.video-container {
+#gallery > .container {
+  padding: 0 50px;
+}
+.photo-container {
   text-align: center;
   margin: 15px auto;
   width: 300px;
   height: 169px;
 }
 
-.photo-container img,
-.video-container iframe {
+.photo-container img {
   max-width: 100%;
   width: 300px;
   height: 169px;
+}
+
+.video-container {
+  text-align: center;
+  margin: 15px auto;
+  width: 750px;
+  height: 415px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  width: 750px;
+  height: 415px;
 }
 /*==================================
  CONTACT SECTION STYLES
 ====================================*/
 #contact {
-  background-color: #f5f3f3;
+  background: url(../img/stuff-bg2.jpg) 50% 0 fixed;
+  background-size: cover;
+  color: white;
+  margin-top: 20px;
+  padding: 50px;
+}
+#contact > h1 {
+  color: #fff;
 }
 .reservation {
   width: 60%;
   padding: 10px;
   border-radius: 8px;
   margin: 0px auto;
-  background-color: rgba(25, 9, 54, 0.349);
+  background-color: rgba(242, 240, 246, 0.507);
   border-radius: -1px -1px 1px 0 rgba(0, 0, 0, 0.1) 0 rgba(0, 0, 0, 0.5);
 }
 .reservation h2 {
@@ -249,4 +271,11 @@ section {
 }
 .reservation input[type="text"]:hover {
   box-shadow: 0 0 18px rgba(0, 47, 100, 0.8);
+}
+
+footer {
+  background: #3e4249;
+  color: white;
+  padding: 20px 0 10px;
+  font-size: 12px;
 }
