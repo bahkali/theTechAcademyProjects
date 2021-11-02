@@ -1,5 +1,6 @@
 body {
   background-color: brown;
+  color: white;
 }
 h1 {
   text-align: center;
@@ -12,13 +13,18 @@ h3 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: chocolate;
 }
+
+div {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 #menuBG {
   width: 400px;
   height: 470px;
   margin: 10px auto;
 }
 #frmMenu {
-  width: 400px;
+  width: 600px;
   height: 200px;
 }
 #totalPrice {
@@ -53,4 +59,10 @@ h3 {
   margin: 10px 0px 0px 100px;
   width: 100px;
   height: 40px;
+}
+
+.center {
+  width: 200px;
+  height: 200px;
+  float: left;
 }
