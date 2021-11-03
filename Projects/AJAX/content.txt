@@ -1,0 +1,1 @@
+This is my content for ajax request. yeeh you did it.
