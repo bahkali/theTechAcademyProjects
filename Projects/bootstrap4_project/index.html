@@ -202,30 +202,137 @@
         </div>
       </div>
       <!-- End ShowLine -->
+      <!-- jumbotron heading -->
+      <div class="jumbotron jumbotron-fluld bg-info mt-5 text-center">
+        <div class="container">
+          <h1
+            class="display-4 hidden-sm-down"
+            style="
+              color: #fff;
+              font-family: roboto;
+              font-weight: 900;
+              text-transform: uppercase;
+            "
+          >
+            Movie Deals
+          </h1>
+          <p class="lead">Check out our monthly deals...</p>
+
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-toggle="modal"
+            data-target="#register"
+          >
+            See our monthly movie deals!
+          </button>
+        </div>
+      </div>
       <!-- Form -->
       <div id="deals" class="text-center container">
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <form>
-              <h1 class="text-primary my-5">SIGN UP FOR MOVIE CLUB REWARDS!</h1>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="you@example.com"
-                />
-              </div>
-
-              <button type="submit" class="btn btn-outline-primary">
+            <h1 class="text-primary my-5">SIGN UP FOR MOVIE CLUB REWARDS!</h1>
+            <div class="input-group mb-5 input-group-sm">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="you@example.com"
+              />
+            </div>
+            <span class="input-group-btn">
+              <button
+                type="button"
+                class="btn btn-primary popover-dismiss"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="top"
+                data-content="Submit your email to receive great movie rewards deals."
+              >
                 Sign up!
               </button>
-            </form>
+            </span>
           </div>
         </div>
       </div>
       <!-- End Form -->
+      <!-- Modal Form -->
+      <div class="modal" id="register" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals.</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <fieldset class="form-group">
+                  <label for="firstname">First Name:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="firstname"
+                    class="form-control"
+                    placeholder="First Name..."
+                  />
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="lastname">Last Name:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="lastname"
+                    class="form-control"
+                    placeholder="Last Name..."
+                  />
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="Email">Email:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="Email"
+                    class="form-control"
+                    placeholder="Email..."
+                  />
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="password">Password:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="password"
+                    class="form-control"
+                    placeholder="Password..."
+                  />
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Form -->
       <div class="container my-5">
         <ul class="nav nav-inline">
           <li class="nav-item">
@@ -263,5 +370,11 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(".popover-dismiss").popover({
+        trigger: "focus",
+      });
+    </script>
   </body>
 </html>
