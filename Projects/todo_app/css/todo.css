@@ -50,3 +50,7 @@ footer {
   text-decoration: none;
   color: white;
 }
+
+.remove {
+  padding-bottom: 5px;
+}
